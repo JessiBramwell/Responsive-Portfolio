@@ -1,0 +1,63 @@
+/*----------
+#4aaaa5
+#777
+#fff
+#ccc
+#666
+#ddd
+-----------*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+    color: #777;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+     border-bottom: #ccc;
+}
+
+.logo {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 5px;
+    float: left;
+} 
+
+nav {
+   float: right;
+}
+
+ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+/* Portfolio */
+
+.project {
+    width: 200px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.project-title {
+    background-color: #4aaaa5; 
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
