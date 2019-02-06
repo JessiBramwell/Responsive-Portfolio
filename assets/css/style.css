@@ -23,7 +23,7 @@
 body {
     /* width: 960px; */
     margin: 0 auto;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     color: #8A888A;
     background-color: #ebebeb;
 }
@@ -93,6 +93,7 @@ section {
 .about-img {
     float: left;
     padding: 8px 30px 15px 0;
+    width: 295px;
 }
 
 
@@ -143,7 +144,11 @@ footer {
     background-color: #666;
     border-top: 5px solid #4aaaa5;
     text-align: center;
-    color: #fff;
+    color: #eee;
     padding-bottom: 5px;
     margin-top: 80px;
+}
+
+footer p {
+    margin: 30px 0 0; 
 }
