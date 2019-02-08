@@ -8,8 +8,8 @@
 -----------*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 
+    display: table; 
 }
 
 .cf:after {
@@ -45,7 +45,7 @@ h2 {
     color: #4aaaa5;
 }
 
-/*  Header  */
+/***************************** Header ******************************/
 
 header {
     width: 100%;
@@ -91,6 +91,12 @@ nav a {
     color: #8A888A;
 }
 
+nav a:hover {
+    color: #666;
+    transition-property: color;
+    transition-delay: .2s;
+}
+
 section {
     background-color: #fff;
     padding: 25px;
@@ -105,25 +111,38 @@ section {
     
 }
 
-/* About */
+/***************************** About ******************************/
+
 .about-img {
     float: left;
     padding: 8px 30px 15px 0;
     width: 295px;
 }
 
-
-
-/* Portfolio */
+/***************************** Portfolio ******************************/
 
 .project {
-    width: 250px;
+    width: 250px; 
+    height: 200px;
     position: relative;
     text-align: center;
     color: #fff;
     float: left;
     margin: 10px 30px 30px 0;
 }
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition-property: transform box-shadow;
+    transition-duration: .3s;
+}
+
+.project:active {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .project-title {
     background-color: #4aaaa5; 
     position: absolute;
@@ -133,7 +152,7 @@ section {
     padding: 10px 0;
 }
 
-/*  Contact */
+/***************************** Contact ******************************/
 
 input {
     display: block;
@@ -155,7 +174,7 @@ input {
 
 }
 
-/*  Footer  */
+/***************************** Footer ******************************/
 
 footer {
     position: absolute;
