@@ -8,8 +8,8 @@
 -----------*/
 .cf:before,
 .cf:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 
 .cf:after {
@@ -18,7 +18,9 @@
 
 html {
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 body {
@@ -36,9 +38,9 @@ body {
 
 /*  Type */
 
-h1, 
+h1,
 h2 {
-   font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h2 {
@@ -64,7 +66,7 @@ header {
     color: #fff;
     padding: 5px 30px;
     float: left;
-} 
+}
 
 .logo a {
     color: #fff;
@@ -72,8 +74,8 @@ header {
 }
 
 nav ul {
-   float: right;
-   margin-top: 22px;
+    float: right;
+    margin-top: 22px;
 }
 
 nav ul li {
@@ -100,15 +102,15 @@ nav a:hover {
 section {
     background-color: #fff;
     padding: 25px;
-    width: 960px;
-    margin: auto; 
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
 }
 
 .main h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 20px;
     margin-top: 0;
-    
 }
 
 /***************************** About ******************************/
@@ -122,13 +124,17 @@ section {
 /***************************** Portfolio ******************************/
 
 .project {
-    width: 250px; 
-    height: 200px;
+    width: 250px;
+    height: 249px;
     position: relative;
     text-align: center;
     color: #fff;
     float: left;
     margin: 10px 30px 30px 0;
+}
+
+.project img {
+    width: 250px;
 }
 
 .project:hover {
@@ -144,11 +150,10 @@ section {
 }
 
 .project-title {
-    background-color: #4aaaa5; 
+    background-color: #4aaaa5;
     position: absolute;
     bottom: 5px;
     width: 100%;
-    /* padding: 10px; */
     padding: 10px 0;
 }
 
@@ -187,9 +192,9 @@ footer {
     color: #eee;
     padding-bottom: 5px;
     margin-top: 80px;
-   
+
 }
 
 footer p {
-    margin: 30px 0 0; 
+    margin: 30px 0 0;
 }
