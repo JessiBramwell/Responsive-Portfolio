@@ -55,6 +55,13 @@ header {
     margin-bottom: 40px;
     text-align: center;
 }
+
+.header-content {
+    /* width: 80%; */
+    max-width: 960px;;
+    margin: 0 auto;
+}
+
 header a {
     text-decoration: none;
 }
@@ -70,9 +77,20 @@ nav ul {
 nav li {
     display: inline;
     padding: 0 15px;
+    border-right: 1px solid #eee;
 }
+nav li:last-child {
+    border: none;
+}
+
 nav a {
     color: #333;
+}
+
+nav a:hover {
+    color: #666;
+    transition-property: color;
+    transition-delay: .1s;
 }
 
 /***************************** Content ******************************/
@@ -80,6 +98,7 @@ nav a {
 section {
     background-color: #fff;
     padding: 25px 25px 100px;
+    max-width: 960px;
     width: 80%;
     margin: auto;
 }
@@ -90,18 +109,28 @@ section {
     margin-top: 0;
 }
 
+/***************************** About ******************************/
+
+    /* .about img {
+        padding: 8px 30px 15px 0;
+        float: left;
+    } */
+
 /***************************** Portfolio ******************************/
 
 .project {
     position: relative;
-    text-align: center;
     color: #fff;
     margin: 30px 0;
+}
+.project img {
+    width: 100%;
 }
 
 .project-title {
     background-color: #4aaaa5;
     position: absolute;
+    text-align: center;
     bottom: 5px;
     width: 100%;
     padding: 10px 0;
@@ -149,25 +178,65 @@ footer p {
     margin: 30px 0 0;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+  /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
     .about img {
         width: 100%;
     }
-    .project img {
+    .project {
         width: 100%;
+        float: none;
+    }    
+ }
+
+/* / Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .header-content {
+        width: 80%;
     }
+    .logo {
+        float: left;
+        font-size: 80%;
+    }
+    nav {
+        float: right;
+    }
+    .about img {
+        padding: 8px 30px 15px 0;
+        float: left;
+    }
+    .project {
+        width: 45%;
+        float: left;
+    }
+    .project:nth-child(odd) {
+        margin-right: 9%;
+    }
+    .project:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        transition-property: transform box-shadow;
+        transition-duration: .3s;
+    }
+    .project:active {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+ }
 
-}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .project {
+        width: 27%;
+        float: left;
+        margin-right: 9%;
+    }
+    .project:nth-child(3n+3) {
+        margin-right: 0;
+    }
+ }
 
- /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { ... }
-
- /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { ... }
-
- /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { ... }
-
- /* Extra large devices (large desktops) */
- /* No media query since the extra-large breakpoint has no upper bound on its width */
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+ }
