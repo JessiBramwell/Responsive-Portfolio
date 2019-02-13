@@ -1,3 +1,4 @@
+/* this is a test */
 /*----------
 #4aaaa5
 #777
@@ -111,10 +112,10 @@ section {
 
 /***************************** About ******************************/
 
-    /* .about img {
-        padding: 8px 30px 15px 0;
-        float: left;
-    } */
+.about img {
+    width: 100%;
+    float: none;
+}
 
 /***************************** Portfolio ******************************/
 
@@ -179,10 +180,8 @@ footer p {
 }
 
 /********************************** Media Queries **********************************/
+
 @media (min-width: 640px) { 
-    .about img {
-        width: 100%;
-    }
     .project {
         width: 100%;
         float: none;
@@ -202,6 +201,7 @@ footer p {
     }
     .about img {
         padding: 8px 30px 15px 0;
+        width: 45%;
         float: left;
     }
     .project {
@@ -231,5 +231,5 @@ footer p {
     }
     .project:nth-child(3n+3) {
         margin-right: 0;
-    }
+    }    
  }
